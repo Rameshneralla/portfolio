@@ -1,20 +1,9 @@
-# pages:
-#   stage: deploy
-#   script:
-#     - mkdir .public
-#     - cp -r * .public
-#     - mv .public public
-#   artifacts:
-#     paths:
-#       - public
-#   only:
-#     - main
-
-    pages:
+pages:
   stage: deploy
   script:
-    - mkdir public
-    - cp -r index.html css js images fonts public
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   artifacts:
     paths:
       - public
