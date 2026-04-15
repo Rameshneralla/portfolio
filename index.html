@@ -3,165 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramesh Nerella — Frontend Developer</title>
-<meta name="description" content="Portfolio of Ramesh Nerella, a frontend developer building accessible, responsive web experiences.">
+<meta name="theme-color" content="#0c0c0c">
+<meta name="color-scheme" content="dark light">
+<title>Ramesh Nerella — Senior UI Developer</title>
+<meta name="description" content="Portfolio of Ramesh Nerella — Senior UI / Frontend Developer with 10+ years building responsive web applications with Angular, HTML5, CSS3, and Bootstrap.">
+<meta name="author" content="Ramesh Nerella">
+<link rel="canonical" href="https://rameshnerella.gitlab.io/">
 
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ramesh Nerella — Senior UI / Frontend Developer">
+<meta property="og:description" content="10+ years building responsive web applications with Angular, HTML5, CSS3, and Bootstrap.">
+<meta property="og:url" content="https://rameshnerella.gitlab.io/">
+<meta property="og:image" content="https://rameshnerella.gitlab.io/images/my-profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ramesh Nerella — Senior UI / Frontend Developer">
+<meta name="twitter:description" content="10+ years building responsive web applications with Angular, HTML5, CSS3, and Bootstrap.">
+<meta name="twitter:image" content="https://rameshnerella.gitlab.io/images/my-profile.jpg">
+
+<link rel="icon" type="image/jpeg" href="images/my-profile.jpg">
+<link rel="apple-touch-icon" href="images/my-profile.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preload" as="image" href="images/my-profile.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="top-sentinel" aria-hidden="true"></div>
 <div id="particles-js" aria-hidden="true"></div>
 
 <button type="button" class="theme-toggle" aria-label="Toggle dark and light theme" aria-pressed="false">
   <i class="bi bi-moon" aria-hidden="true"></i>
 </button>
 
-<header>
-  <nav class="navbar navbar-expand-md fixed-top" aria-label="Primary">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">Ramesh Nerella<span class="highlight">.</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation menu">
-        <i class="bi bi-list" aria-hidden="true"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Primary">
+    <a class="brand" href="#home"><em>Ramesh</em> Nerella<span class="dot">.</span></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<main>
+<main id="main">
 
   <section id="home" class="hero">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-md-7 order-md-1 order-2 text-center text-md-start">
-          <h1>Hi, I'm <span class="highlight">Ramesh Nerella</span></h1>
-          <p class="lead">Senior UI Developer &amp; Team Lead with <strong>10+ years</strong> building responsive web applications using Angular, HTML5, CSS3, and Bootstrap.</p>
-          <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4 flex-wrap">
-            <a href="resume/Ramesh_Resume.pdf" class="btn btn-accent px-4 py-2" download>
-              <i class="bi bi-download me-2" aria-hidden="true"></i>Download Resume
-            </a>
-            <a href="#contact" class="btn btn-ghost px-4 py-2">Get in Touch</a>
-          </div>
-        </div>
-        <div class="col-md-5 order-md-2 order-1">
-          <div class="hero-img">
-            <img src="images/my-profile.jpg" alt="Portrait of Ramesh Nerella">
-          </div>
-        </div>
+    <div class="hero-layout">
+    <div class="profile-badge">
+      <div class="marquee-ring" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <path id="circlePath" d="M 100, 100 m -82, 0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0" fill="none"/>
+          </defs>
+          <text>
+            <textPath href="#circlePath">RAMESH NERELLA · PORTFOLIO 2026 · SENIOR UI DEVELOPER ·</textPath>
+          </text>
+        </svg>
+      </div>
+      <img src="images/my-profile.jpg" alt="Portrait of Ramesh Nerella" width="320" height="320" fetchpriority="high" decoding="async">
+    </div>
+
+    <div class="hero-inner">
+      <p class="eyebrow">RAMESH NERELLA · PORTFOLIO 2026</p>
+      <h1 class="hero-headline" data-reveal>
+        A <em>frontend developer,</em><br>building for the web.
+      </h1>
+      <div class="hero-ctas" data-reveal>
+        <a href="resume/Ramesh_Resume.pdf" class="btn-accent" download>
+          <i class="bi bi-download" aria-hidden="true"></i>Download Resume
+        </a>
+        <a href="#contact" class="text-link">Let&rsquo;s talk <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
       </div>
     </div>
+    </div>
+
   </section>
 
   <section id="about" class="section">
-    <div class="container">
-      <h2>About <span class="highlight">Me</span></h2>
-      <div class="row">
-        <div class="col-md-9">
-          <p>Senior UI Developer with <strong>10+ years</strong> of experience building responsive web applications using HTML5, CSS3, SCSS, Bootstrap 4/5, and Angular (v7 through v17). Over the past <strong>4+ years</strong>, I've led teams of 8&ndash;10 developers across multiple projects &mdash; assigning tasks, running code reviews, and managing scrum ceremonies.</p>
-          <p>I've shipped <strong>400+ responsive web pages</strong>, <strong>1000+ email templates</strong>, and multiple full applications for clients across the US, UK, and APAC. I focus on performance tuning, cross-browser compatibility, and clean, maintainable UI code.</p>
-          <ul class="about-list">
-            <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Angular v7 / v8 / v9 / v10 / v11 / v12 / v13 / v15 / v17</li>
-            <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>HTML5, CSS3, SCSS, Bootstrap 4 &amp; 5, jQuery</li>
-            <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Tooling: Git, JIRA, AWS, Azure, Elastic Beanstalk, FTP</li>
-            <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Responsive design, cross-browser testing, UI performance tuning</li>
-          </ul>
+    <div class="shell">
+      <p class="eyebrow" data-reveal>ABOUT</p>
+      <p class="section-lead" data-reveal><em>I&rsquo;ve spent ten years building interfaces</em> &mdash; led teams of eight, shipped four hundred pages, and care deeply about the craft of making things feel right on the web.</p>
+
+      <div class="stats-grid" data-reveal>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years Experience</span>
         </div>
+        <div class="stat">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Years Team Lead</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">400+</span>
+          <span class="stat-label">Responsive Pages</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1000+</span>
+          <span class="stat-label">Email Templates</span>
+        </div>
+      </div>
+
+      <div class="tech-strip" data-reveal>
+        <span>Angular v7&ndash;v17</span>
+        <span>HTML5</span>
+        <span>CSS3 &amp; SCSS</span>
+        <span>Bootstrap 4 &amp; 5</span>
+        <span>jQuery</span>
+        <span>Git</span>
+        <span>JIRA</span>
+        <span>AWS</span>
+        <span>Azure</span>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="row g-4">
+  <section id="experience" class="section section-timeline">
+    <div class="shell">
+      <div class="section-head section-head--stacked" data-reveal>
+        <div class="section-head-text">
+          <p class="eyebrow">EXPERIENCE</p>
+          <h2 class="section-title">My road to glory.</h2>
+          <p class="section-sub">A timeline of where I&rsquo;ve worked over the past ten years.</p>
+        </div>
+      </div>
 
-        <div class="col-md-6 col-lg-4">
-          <article class="experience-card">
-            <div class="experience-logo experience-logo--purple" aria-hidden="true">
-              <img src="images/motherson-logo.jpg" alt="" loading="lazy" onerror="this.outerHTML='M'">
-            </div>
+      <ol class="timeline" data-reveal>
+
+        <li class="timeline-item">
+          <article class="timeline-card">
+            <span class="timeline-tag tag--purple">Current</span>
+            <p class="timeline-date">Mar 2025 &ndash; Present</p>
             <h3>Motherson Technologies</h3>
-            <p class="role">Team Lead &middot; via Orange Mantra</p>
-            <p class="duration">
-              <i class="bi bi-calendar3 me-2" aria-hidden="true"></i>Mar 2025 &ndash; Present
-            </p>
+            <p class="timeline-role">Team Lead &middot; via Orange Mantra</p>
           </article>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-4">
-          <article class="experience-card">
-            <div class="experience-logo experience-logo--blue" aria-hidden="true">
-              <img src="images/evoke-technologies-logo.png" alt="" loading="lazy" onerror="this.outerHTML='E'">
-            </div>
+        <li class="timeline-item">
+          <article class="timeline-card">
+            <span class="timeline-tag tag--blue">Senior</span>
+            <p class="timeline-date">Sep 2022 &ndash; Dec 2024</p>
             <h3>Evoke Technologies</h3>
-            <p class="role">Senior Technical Associate</p>
-            <p class="duration">
-              <i class="bi bi-calendar3 me-2" aria-hidden="true"></i>Sep 2022 &ndash; Dec 2024
-            </p>
+            <p class="timeline-role">Senior Technical Associate</p>
           </article>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-4">
-          <article class="experience-card">
-            <div class="experience-logo experience-logo--teal" aria-hidden="true">
-              <img src="images/peopletech-logo.png" alt="" loading="lazy" onerror="this.outerHTML='P'">
-            </div>
+        <li class="timeline-item">
+          <article class="timeline-card">
+            <span class="timeline-tag tag--teal">UI Dev</span>
+            <p class="timeline-date">Feb 2021 &ndash; Sep 2022</p>
             <h3>PeopleTech Group</h3>
-            <p class="role">UI Developer</p>
-            <p class="duration">
-              <i class="bi bi-calendar3 me-2" aria-hidden="true"></i>Feb 2021 &ndash; Sep 2022
-            </p>
+            <p class="timeline-role">UI Developer</p>
           </article>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-4">
-          <article class="experience-card">
-            <div class="experience-logo experience-logo--orange" aria-hidden="true">
-              <img src="images/ajr-info-system-logo.png" alt="" loading="lazy" onerror="this.outerHTML='A'">
-            </div>
+        <li class="timeline-item">
+          <article class="timeline-card">
+            <span class="timeline-tag tag--orange">UI Dev</span>
+            <p class="timeline-date">Dec 2018 &ndash; Feb 2021</p>
             <h3>AJR Infosystems</h3>
-            <p class="role">UI Developer</p>
-            <p class="duration">
-              <i class="bi bi-calendar3 me-2" aria-hidden="true"></i>Dec 2018 &ndash; Feb 2021
-            </p>
+            <p class="timeline-role">UI Developer</p>
           </article>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-4">
-          <article class="experience-card">
-            <div class="experience-logo experience-logo--pink" aria-hidden="true">
-              <img src="images/goodrich-it-solutions-logo.webp" alt="" loading="lazy" onerror="this.outerHTML='G'">
-            </div>
+        <li class="timeline-item">
+          <article class="timeline-card">
+            <span class="timeline-tag tag--pink">First Role</span>
+            <p class="timeline-date">Oct 2016 &ndash; Dec 2018</p>
             <h3>Goodrich IT Solutions</h3>
-            <p class="role">UI Developer</p>
-            <p class="duration">
-              <i class="bi bi-calendar3 me-2" aria-hidden="true"></i>Oct 2016 &ndash; Dec 2018
-            </p>
+            <p class="timeline-role">UI Developer</p>
           </article>
-        </div>
+        </li>
 
-      </div>
+      </ol>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="row g-4">
+  <section id="projects" class="section section-carousel">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-head-text">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2 class="section-title">Projects &amp; things I&rsquo;ve shipped.</h2>
+        </div>
+        <div class="swiper-nav">
+          <button class="swiper-prev proj-prev" type="button" aria-label="Previous project"><i class="bi bi-arrow-left" aria-hidden="true"></i></button>
+          <button class="swiper-next proj-next" type="button" aria-label="Next project"><i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
 
-        <div class="col-md-6 col-lg-4">
+    <div class="swiper projects-swiper" data-reveal>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">01</span>
             <span class="project-company">PeopleTech Group</span>
             <h3>StarGenie</h3>
             <p>Web and mobile app to communicate with Telugu celebrities and book appointments &amp; payments for events.</p>
@@ -174,11 +223,12 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">02</span>
             <span class="project-company">PeopleTech Group</span>
             <h3>Washington Certification Services</h3>
-            <p>Certification portal for Green River College and the WA Department of Health's Office of Drinking Water, supporting operators and Backflow Assembly Testers.</p>
+            <p>Certification portal for Green River College and the WA Department of Health&rsquo;s Office of Drinking Water, supporting operators and Backflow Assembly Testers.</p>
             <div class="project-tech">
               <span class="tech-tag">HTML5</span>
               <span class="tech-tag">SCSS</span>
@@ -188,8 +238,9 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">03</span>
             <span class="project-company">PeopleTech Group</span>
             <h3>HCA &mdash; HealthCare Authority</h3>
             <p>Health-card issuance portal allowing employees and the public to apply through organizations or individually.</p>
@@ -202,8 +253,9 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">04</span>
             <span class="project-company">AJR Infosystems</span>
             <h3>Scocu</h3>
             <p>Web tool for developing different types of web and mobile applications from a single platform.</p>
@@ -217,8 +269,9 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">05</span>
             <span class="project-company">AJR Infosystems</span>
             <h3>Xenvoice</h3>
             <p>Cloud-based business communication platform offering secure, flexible, and affordable voice calls and text messaging.</p>
@@ -232,8 +285,9 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">06</span>
             <span class="project-company">AJR Infosystems</span>
             <h3>Banter</h3>
             <p>Updated Xenvoice app for web and mobile (iOS/Android) &mdash; unified voice, text, and fax tools with 24&times;7 support.</p>
@@ -247,8 +301,9 @@
           </article>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="swiper-slide">
           <article class="project-card">
+            <span class="project-index">07</span>
             <span class="project-company">Goodrich IT Solutions</span>
             <h3>School Management System</h3>
             <p>Admin panel for student registration, result uploads, and generating reports &mdash; with role-based login for administrators.</p>
@@ -264,52 +319,199 @@
 
       </div>
     </div>
+    </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="container text-center">
-      <h2>Get in <span class="highlight">Touch</span></h2>
-      <p class="mb-4">Interested in working together? Reach out on any of these channels.</p>
-      <div class="d-flex gap-3 justify-content-center flex-wrap">
-        <a href="mailto:your.email@example.com" class="btn btn-ghost">
-          <i class="bi bi-envelope me-2" aria-hidden="true"></i>Email
-        </a>
-        <a href="https://gitlab.com/Rameshneralla" class="btn btn-ghost" rel="noopener">
-          <i class="bi bi-gitlab me-2" aria-hidden="true"></i>GitLab
-        </a>
+  <section id="contact" class="section section-contact">
+    <div class="shell">
+      <p class="eyebrow" data-reveal>CONTACT</p>
+      <h2 class="contact-headline" data-reveal><em>Let&rsquo;s build</em> something together.</h2>
+
+      <div class="contact-grid">
+        <div class="contact-photo" data-reveal>
+          <div class="contact-photo-blob" aria-hidden="true"></div>
+          <div class="contact-photo-ring" aria-hidden="true"></div>
+          <img src="images/contact-me-image.jpg" alt="Ramesh Nerella" loading="lazy" decoding="async" width="400" height="400">
+          <div class="contact-photo-name">
+            <span class="name-accent">Ramesh Nerella</span>
+            <span class="name-role">Senior UI / Frontend Developer</span>
+            <span class="name-role">+91-7075281024</span>
+          </div>
+        </div>
+
+        <div class="contact-form-card" data-reveal>
+          <div class="contact-form-head">
+            <h3>Contact Me</h3>
+            <span class="contact-form-icon" aria-hidden="true"><i class="bi bi-send-fill"></i></span>
+          </div>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="cf-phone">Phone Number</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+91 90000 00000">
+            </div>
+            <div class="field">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-accent contact-send">
+              Send Message <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
       </div>
+
+      <div class="contact-direct" data-reveal>
+        <a href="mailto:rameshprince281024@gmail.com" class="contact-email">rameshprince281024@gmail.com <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+
+        <div class="contact-connect">
+          <a href="https://www.linkedin.com/in/ramesh-nerella-a4a3b5247/" target="_blank" rel="noopener" class="linkedin-btn">
+            <span class="linkedin-btn-icon"><i class="bi bi-linkedin" aria-hidden="true"></i></span>
+            <span class="linkedin-btn-text">
+              <span class="linkedin-btn-label">Let&rsquo;s connect on</span>
+              <span class="linkedin-btn-name">LinkedIn</span>
+            </span>
+            <i class="bi bi-arrow-up-right linkedin-btn-arrow" aria-hidden="true"></i>
+          </a>
+          <figure class="linkedin-qr">
+            <img src="images/linkedin-qr.jpg" alt="LinkedIn QR code for Ramesh Nerella" loading="lazy" decoding="async" width="120" height="120">
+            <figcaption>Scan to connect</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <ul class="contact-meta" data-reveal>
+        <li><a href="https://gitlab.com/Rameshneralla" rel="noopener">GitLab</a></li>
+        <li><a href="resume/Ramesh_Resume.pdf" download>Resume</a></li>
+        <li>Based in India</li>
+      </ul>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p class="mb-0">&copy; <span id="year"></span> Ramesh Nerella. Built with Bootstrap.</p>
+  <div class="shell footer-row">
+    <p>&copy; <span id="year"></span> Ramesh Nerella &middot; Built with HTML, CSS &amp; Bootstrap</p>
+    <a href="#home" class="back-top">Back to top <i class="bi bi-arrow-up" aria-hidden="true"></i></a>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.theme-toggle');
-  const icon = toggle.querySelector('i');
-  toggle.addEventListener('click', () => {
-    const light = document.body.classList.toggle('light-mode');
-    icon.classList.toggle('bi-moon', !light);
-    icon.classList.toggle('bi-sun', light);
-    toggle.setAttribute('aria-pressed', String(light));
-  });
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isSmallScreen = window.matchMedia('(max-width: 640px)').matches;
 
-  if (typeof particlesJS === 'function') {
+  const toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    const icon = toggle.querySelector('i');
+    toggle.addEventListener('click', () => {
+      const light = document.body.classList.toggle('light-mode');
+      if (icon) {
+        icon.classList.toggle('bi-moon', !light);
+        icon.classList.toggle('bi-sun', light);
+      }
+      toggle.setAttribute('aria-pressed', String(light));
+    });
+  }
+
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(open));
+    });
+    navLinks.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const header = document.querySelector('.site-header');
+  const sentinel = document.getElementById('top-sentinel');
+  if (header && sentinel && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      header.classList.toggle('scrolled', !entry.isIntersecting);
+    }).observe(sentinel);
+  }
+
+  const reveals = document.querySelectorAll('[data-reveal]');
+  if (reveals.length && 'IntersectionObserver' in window && !prefersReducedMotion) {
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach((el) => revealObs.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('is-visible'));
+  }
+
+  if (typeof particlesJS === 'function' && !prefersReducedMotion) {
     particlesJS('particles-js', {
       particles: {
-        number: { value: 60 },
-        size: { value: 3 },
-        move: { speed: 2 },
-        line_linked: { enable: true, opacity: 0.2 }
+        number: {
+          value: isSmallScreen ? 60 : 140,
+          density: { enable: true, value_area: 900 }
+        },
+        size: { value: 2 },
+        move: { speed: 1.2 },
+        line_linked: { enable: true, opacity: 0.2 },
+        color: { value: '#ffffff' },
+        opacity: { value: 0.45 }
+      },
+      retina_detect: true
+    });
+  }
+
+  if (typeof Swiper === 'function') {
+    new Swiper('.projects-swiper', {
+      slidesPerView: 1.05,
+      spaceBetween: 24,
+      grabCursor: true,
+      a11y: true,
+      keyboard: { enabled: true },
+      watchSlidesProgress: true,
+      breakpoints: {
+        640: { slidesPerView: 1.3, spaceBetween: 28 },
+        768: { slidesPerView: 1.8, spaceBetween: 32 },
+        1200: { slidesPerView: 2.4, spaceBetween: 36 }
+      },
+      navigation: { nextEl: '.proj-next', prevEl: '.proj-prev' }
+    });
+  }
+
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(contactForm);
+      const name = (data.get('name') || '').toString().trim();
+      const phone = (data.get('phone') || '').toString().trim();
+      const email = (data.get('email') || '').toString().trim();
+      const message = (data.get('message') || '').toString().trim();
+      if (!name || !email || !message) {
+        contactForm.reportValidity();
+        return;
       }
+      const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:rameshprince281024@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 

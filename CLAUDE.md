@@ -7,7 +7,7 @@ Static personal portfolio site deployed via **GitLab Pages**. Single page ([inde
 
 
 ## project instruction
-- background theme should be the same everytime even if i give any instruction
+- background theme should be the same everytime even if i give any instruction.
 
 ## HTML practices
 - Always include `<!DOCTYPE html>`, `<html lang="en">`, UTF-8 charset, and viewport meta.
