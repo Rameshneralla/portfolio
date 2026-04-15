@@ -4,6 +4,7 @@ pages:
     - mkdir .public
     - cp -r * .public
     - mv .public public
+    - rm -f public/CLAUDE.md
   artifacts:
     paths:
       - public
