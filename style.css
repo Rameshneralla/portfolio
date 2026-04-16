@@ -568,6 +568,7 @@ a { color: inherit; text-decoration: none; }
 .section-carousel .swiper {
   padding: 1rem 0 1.5rem;
   overflow: hidden;
+  touch-action: pan-y;
 }
 .section-carousel .swiper-wrapper { align-items: stretch; }
 .section-carousel .swiper-slide {
