@@ -11,7 +11,7 @@
   --border-strong: rgba(255, 255, 255, 0.16);
 
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-display: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
 
   --fs-display: clamp(2.75rem, 7vw, 5.5rem);
   --fs-h1: clamp(2.25rem, 5vw, 4rem);
@@ -133,8 +133,8 @@ a { color: inherit; text-decoration: none; }
 .brand em {
   font-family: var(--font-display);
   font-style: italic;
-  font-weight: 400;
-  font-size: 1.35rem;
+  font-weight: 600;
+  font-size: 1.25rem;
   color: var(--accent);
   padding-right: 0.15rem;
 }
@@ -290,8 +290,8 @@ a { color: inherit; text-decoration: none; }
 .hero-headline {
   font-family: var(--font-display);
   font-size: var(--fs-display);
-  line-height: 1.02;
-  font-weight: 400;
+  line-height: 1.05;
+  font-weight: 700;
   margin: 0 0 2rem;
   letter-spacing: -0.01em;
   color: var(--text);
@@ -439,8 +439,8 @@ a { color: inherit; text-decoration: none; }
 .section-title {
   font-family: var(--font-display);
   font-size: var(--fs-h1);
-  line-height: 1.05;
-  font-weight: 400;
+  line-height: 1.1;
+  font-weight: 700;
   letter-spacing: -0.01em;
   margin: 0.25rem 0 0;
   color: var(--text);
@@ -448,8 +448,8 @@ a { color: inherit; text-decoration: none; }
 .section-lead {
   font-family: var(--font-display);
   font-size: clamp(1.35rem, 3vw, 2.25rem);
-  line-height: 1.25;
-  font-weight: 400;
+  line-height: 1.35;
+  font-weight: 600;
   color: var(--ink-soft);
   margin: 0.5rem 0 3.5rem;
   max-width: none;
@@ -483,7 +483,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1;
   color: var(--text);
-  font-weight: 400;
+  font-weight: 700;
 }
 .stat-suffix {
     font-family: var(--font-display);
@@ -635,7 +635,7 @@ a { color: inherit; text-decoration: none; }
 .project-card h3 {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.15;
   margin: 0 0 0.75rem;
   color: var(--text);
@@ -664,6 +664,65 @@ a { color: inherit; text-decoration: none; }
   border-radius: 999px;
   white-space: nowrap;
 }
+
+/* Icon-based project logo (for independent projects without a logo image) */
+.project-logo--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 183, 51, 0.12);
+  color: var(--accent);
+  border-color: rgba(247, 183, 51, 0.3);
+  font-size: 1.25rem;
+}
+
+/* Extra headroom when a card carries a live badge */
+.project-card:has(.project-live) { padding-top: 3rem; }
+
+/* "Live" badge on independent projects */
+.project-live {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0c0c0c;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+}
+.project-live .dot-live {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #0c0c0c;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .project-live .dot-live { animation: livePulse 1.6s ease-in-out infinite; }
+}
+@keyframes livePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
+}
+
+/* Visit-live link inside a project card */
+.project-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  transition: gap 0.25s ease, color 0.25s ease;
+}
+.project-visit:hover { gap: 0.7rem; color: #ffca4d; }
+.project-visit i { font-size: 0.875rem; }
 
 /* ============ TIMELINE (EXPERIENCE) ============ */
 .section-head--stacked {
@@ -820,7 +879,7 @@ a { color: inherit; text-decoration: none; }
 .timeline-card h3 {
   font-family: var(--font-display);
   font-size: 1.625rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.15;
   margin: 0 0 0.35rem;
   color: var(--text);
@@ -864,8 +923,8 @@ a { color: inherit; text-decoration: none; }
 .contact-headline {
   font-family: var(--font-display);
   font-size: clamp(2.75rem, 7vw, 5.5rem);
-  line-height: 1.05;
-  font-weight: 400;
+  line-height: 1.08;
+  font-weight: 700;
   margin: 0.5rem 0 3rem;
   letter-spacing: -0.01em;
   color: var(--text);
@@ -986,7 +1045,7 @@ a { color: inherit; text-decoration: none; }
 .contact-form-head h3 {
   font-family: var(--font-display);
   font-size: 1.875rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
   color: var(--text);
 }
