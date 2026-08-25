@@ -915,6 +915,93 @@ a { color: inherit; text-decoration: none; }
   }
 }
 
+/* ============ ROLES & RESPONSIBILITIES ============ */
+.roles-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.5rem;
+}
+.role-card {
+  position: relative;
+  background: var(--card-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2rem 1.75rem 1.75rem;
+  border-radius: 1rem;
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
+}
+.role-card:hover {
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-hover);
+}
+.role-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.875rem;
+  background: rgba(247, 183, 51, 0.12);
+  border: 1px solid rgba(247, 183, 51, 0.35);
+  color: var(--accent);
+  font-size: 1.375rem;
+  margin-bottom: 1.25rem;
+}
+.role-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: var(--text);
+}
+.role-card > p {
+  color: var(--muted);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  margin: 0;
+}
+.role-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1.5rem 0 0;
+  margin: 1.5rem 0 0;
+  border-top: 1px solid var(--border);
+}
+.role-tags li {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+}
+.light-mode .role-card {
+  background: var(--card-surface-light);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+.light-mode .role-tags li {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .role-card {
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  }
+  .role-card:hover { transform: translateY(-0.35rem); }
+}
+
 /* ============ CONTACT ============ */
 .section-contact {
   padding-top: var(--section-y);
